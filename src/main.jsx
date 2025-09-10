@@ -6,7 +6,7 @@ import{BrowserRouter} from 'react-router-dom'
 import CoinContextProvider from './context/CoinContext.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/Crypton-react-project'>
     <CoinContextProvider>
       <App />
     </CoinContextProvider>
