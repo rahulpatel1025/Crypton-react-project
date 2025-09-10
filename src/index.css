@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.app {
+    min-height: 100vh;
+    color: white;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}

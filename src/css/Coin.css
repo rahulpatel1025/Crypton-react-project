@@ -1,0 +1,84 @@
+.coin {
+  padding: 20px;
+  color: #fff;
+  background: #121212;
+  min-height: 100vh;
+}
+
+.coin-name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.coin-name img {
+  width: 50px;
+  height: 50px;
+}
+
+.coin-chart {
+  margin-bottom: 30px;
+}
+
+.coin-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.info-card {
+  background: #1e1e2f;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-card .label {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 5px;
+}
+
+.info-card .value {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info-card.highlight {
+  background: #2a2a44;
+  border: 1px solid #00d4ff;
+}
+
+.value.green {
+  color: #4caf50;
+}
+
+.value.red {
+  color: #f44336;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.spin {
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-left-color: #00d4ff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
